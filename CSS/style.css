@@ -9,7 +9,7 @@ html {
 body {
     margin: 0;
     height: 100%;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 *, *::before, *::after {                    /*a tutti gli elementi e pseudo elementi dico di ereditare (inherit) il box sizing dal genitore*/
@@ -96,18 +96,28 @@ header{
 }
 
 .heroBanner h1 {
-    font-size: 2.7rem;
+    font-size: 4rem;
     margin: 0;
 }
 
 .heroBanner p {
     text-transform: uppercase;
+    font-size: 1.2rem;
 }
 
-.heroBanner h3 {
+.heroBanner h3 a {
     text-transform: uppercase;
     font-weight:700;
-    margin-top: 5px;
+    text-decoration: none;
+    color: black;
+    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.heroBanner svg {
+    height: 20px;
 }
 
 /**********CARD***********/
@@ -117,7 +127,8 @@ header{
 
 .card {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 35px;
 }
 
 .card-media {
@@ -131,8 +142,46 @@ header{
 
 .card-text {
     background-color: white;
+    padding: 20px;
 }
 
+.card-text p:first-child {
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.card-text h2 {
+    font-size:3.2rem;
+    margin-top: 0;
+}
+
+.card-text p:nth-child(3),
+.card-text p:nth-child(4) {
+    font-size: 1.6rem;
+    font-weight:400;
+}
+
+.cardBtn {
+    background-color: black;
+    border: none;
+    height: 48px;
+    width: 170px;
+}
+
+.cardBtn a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.cardBtn svg {
+    height: 25px;
+}
 
 
 

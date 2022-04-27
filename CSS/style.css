@@ -1,0 +1,149 @@
+/**********GENERAL***********/
+html {
+    font-size: 62.50%;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    height: 100vh;
+}
+
+body {
+    margin: 0;
+    height: 100%;
+    background-color: #eee;
+}
+
+*, *::before, *::after {                    /*a tutti gli elementi e pseudo elementi dico di ereditare (inherit) il box sizing dal genitore*/
+    box-sizing: inherit;
+}
+
+/**********HEADER***********/
+.screen-reader-only{
+    display:none;
+}
+
+header{
+    margin: 0;
+    position: sticky;
+}
+
+.newsLetterBanner{
+    background-color: black;
+    padding: 10px 15px;
+}
+
+.newsLetterBanner p {
+    margin: 0 0 0 5px;
+    color: white;
+    font-weight: 700;
+}
+
+#newsLetterBtn {
+    background: none;
+    border: none;
+    position: absolute;
+    top: 2px;
+    right: 15px;
+    height: 20px;
+    cursor: pointer;
+}
+
+#newsCloseIcon {
+    color: white;
+    height: 25px;
+}
+
+/**********NAVBAR***********/
+
+.navigation {
+    background-color: white;
+    display: flex;
+    align-items: center;
+}
+
+.navigationIcon {
+    padding: 10px;
+}
+
+.navBtn {
+    background: none;
+    border: none;
+    height: 20px;
+    color: black;
+}
+
+.logo-container {
+    border: 1px dashed black;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+/**********MAIN***********/
+
+/**********HERO***********/
+.hero-container {
+    background-image: url("/img/jeremy-bezanger-0QgbyZdhX7k-unsplash.webp");
+    background-size: cover;
+    height: 400px;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.heroBanner {
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.heroBanner h1 {
+    font-size: 2.7rem;
+    margin: 0;
+}
+
+.heroBanner p {
+    text-transform: uppercase;
+}
+
+.heroBanner h3 {
+    text-transform: uppercase;
+    font-weight:700;
+    margin-top: 5px;
+}
+
+/**********CARD***********/
+.card-container {
+    margin-top: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-media {
+    height: 300px;
+    overflow: hidden;
+}
+
+.card-media img {
+    width: 100%;
+}
+
+.card-text {
+    background-color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -24,6 +24,8 @@ body {
 header{
     margin: 0;
     position: sticky;
+    background-color: white;
+    text-align: center;
 }
 
 .newsLetterBanner{
@@ -56,12 +58,14 @@ header{
 
 .navigation {
     background-color: white;
-    display: flex;
-    align-items: center;
 }
 
 .navigationIcon {
     padding: 10px;
+    display: inline-block;
+    position: absolute;
+    top: 5px;
+    left: 10px;
 }
 
 .navBtn {
@@ -74,8 +78,9 @@ header{
 .logo-container {
     border: 1px dashed black;
     padding: 5px;
-    margin: 0 auto;
+    display: inline-block;
 }
+
 
 /**********MAIN***********/
 
@@ -167,6 +172,9 @@ header{
     border: none;
     height: 48px;
     width: 170px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .cardBtn a {
@@ -235,22 +243,20 @@ header{
     width: 100%;
     border: none;
     border-bottom: 1px solid #ddd;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 12px 20px;
     background-color: #F5F5F5;
-    }
-
-.accordion h3 {
-    margin: 0;
     font-size: 1.6rem;
     font-weight: 700;
-}
-.accordion svg{
-    margin-right: 10px;
-}
+    text-align: start;
+    position: relative;
+    }
+    
+    .plusIcon {
+        position: absolute;
+        right: 10px;
+    }
 
+    
 /**********SOCIAL***********/
 
 .social {
@@ -304,17 +310,3 @@ header{
 .footerBannerText {
     margin: 20px 0 40px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-

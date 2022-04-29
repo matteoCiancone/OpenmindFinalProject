@@ -93,24 +93,24 @@ header{
     flex-direction: column-reverse;
 }
 
-.aboveTheFolder {
+.aboveTheFold {
     background-color: white;
     text-align: center;
     font-weight: bold;
     padding: 20px;
 }
 
-.aboveTheFolder h1 {
+.aboveTheFold h1 {
     font-size: 4rem;
     margin: 0;
 }
 
-.aboveTheFolder p {
+.aboveTheFold p {
     text-transform: uppercase;
     font-size: 1.2rem;
 }
 
-.aboveTheFolder h2 a {
+.aboveTheFold h2 a {
     text-transform: uppercase;
     font-weight:700;
     text-decoration: none;
@@ -121,7 +121,7 @@ header{
     justify-content: center;
 }
 
-.aboveTheFolder svg {
+.aboveTheFold svg {
     height: 20px;
 }
 

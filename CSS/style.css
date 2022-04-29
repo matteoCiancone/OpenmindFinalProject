@@ -496,7 +496,7 @@ footer {
     width: 50%;
     display: flex;
     flex-wrap: wrap;
-    padding: 50px;
+    padding: 45px 50px;
 }
 
 .info h2 {
@@ -506,9 +506,15 @@ footer {
 .list {
     display: inline-block;
     background-color: white;
-    padding: 50px;
+    padding: 50px 40px;
     position: relative;
     flex-basis: 24%;
+}
+
+.listTitle {
+    font-size: 1.6rem;
+    font-weight: 700;
+    line-height: 1.5;
 }
 
 .list ul li {
@@ -530,6 +536,7 @@ footer {
 .form {
     display: flex;
     flex-basis: 100%;
+    margin-bottom: 15px;
 }
 
 .form .inputBtn {

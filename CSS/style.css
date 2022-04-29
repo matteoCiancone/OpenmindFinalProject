@@ -85,7 +85,7 @@ header{
 /**********MAIN***********/
 
 /**********HERO***********/
-.hero-container {
+.above-container {
     background-image: url("/img/jeremy-bezanger-0QgbyZdhX7k-unsplash.webp");
     background-size: cover;
     height: 400px;
@@ -93,24 +93,24 @@ header{
     flex-direction: column-reverse;
 }
 
-.heroBanner {
+.aboveTheFolder {
     background-color: white;
     text-align: center;
     font-weight: bold;
     padding: 20px;
 }
 
-.heroBanner h1 {
+.aboveTheFolder h1 {
     font-size: 4rem;
     margin: 0;
 }
 
-.heroBanner p {
+.aboveTheFolder p {
     text-transform: uppercase;
     font-size: 1.2rem;
 }
 
-.heroBanner h2 a {
+.aboveTheFolder h2 a {
     text-transform: uppercase;
     font-weight:700;
     text-decoration: none;
@@ -121,7 +121,7 @@ header{
     justify-content: center;
 }
 
-.heroBanner svg {
+.aboveTheFolder svg {
     height: 20px;
 }
 

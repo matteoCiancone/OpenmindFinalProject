@@ -201,6 +201,7 @@ header{
     width: 50%; 
     height: 160px;
     margin-right: 10px;
+    padding: 20px;
   }
 
   .flickity-page-dots {
@@ -213,6 +214,13 @@ header{
 
   .flickity-viewport{
       height: 100px;
+  }
+
+  @media  (min-width: 425px) {
+      .carousel-cell {
+        width: 30%;
+      }
+      
   }
   
 /**********FOOTER***********/

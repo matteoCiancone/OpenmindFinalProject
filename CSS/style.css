@@ -183,6 +183,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
 }
 
 .cardBtn a {
@@ -542,6 +543,7 @@ footer {
 .form .inputBtn {
     height: 40px;
     margin-left: 15px;
+    cursor: pointer;
 }
 
 .footerBanner {

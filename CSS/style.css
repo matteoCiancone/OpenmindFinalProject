@@ -442,7 +442,7 @@ header{
 .card-media {
     height: 500px;
     overflow: hidden;
-    flex-basis: 103%;    /*!!!!!!!!! provvisorio!!!!!!!!!*/
+    flex-basis: 104%;    /*!!!!!!!!! provvisorio!!!!!!!!!*/
 }
 
 .card-media img {

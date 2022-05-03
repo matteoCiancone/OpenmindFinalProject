@@ -382,6 +382,11 @@ header{
 
 .navList li {
     display: inline-block;
+    transition: transform .1s;
+}
+
+.navList li:hover {
+    transform: scale(1.2);
 }
 
 .navList a {

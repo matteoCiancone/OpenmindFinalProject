@@ -1,0 +1,53 @@
+header {
+	margin: 0;
+	position: sticky;
+	background-color: $background-color_main;
+	text-align: center;
+}
+.newsLetterBanner {
+	background-color: $background-color_black;
+	padding: 10px 15px;
+	p {
+		margin: 0 0 0 5px;
+		color: $text-color_white;
+		font-weight: 700;
+	}
+}
+#newsLetterBtn {
+	background: none;
+	border: none;
+	position: absolute;
+	top: 2px;
+	right: 15px;
+	height: 20px;
+	cursor: pointer;
+}
+#newsCloseIcon {
+	color: $text-color_white;
+	height: 25px;
+}
+.navList {
+	display: none;
+}
+.navigation {
+	background-color: $background-color_main;
+}
+.navigationIcon {
+	padding: 10px;
+	display: inline-block;
+	position: absolute;
+	top: 5px;
+	left: 10px;
+}
+.navBtn {
+	background: none;
+	border: none;
+	height: 20px;
+	color: $text-color_black;
+}
+.logo-container {
+	border: 1px dashed black;
+	padding: 5px;
+	display: inline-block;
+	margin: 2px;
+}

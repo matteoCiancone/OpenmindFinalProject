@@ -1,0 +1,30 @@
+.carousel {
+	background: #EEE;
+}
+.carousel-cell {
+	width: 50%;
+	height: 160px;
+	margin-right: 10px;
+	padding: 20px;
+}
+.flickity-page-dots {
+	display: none;
+}
+.flickity-button {
+	display: none;
+}
+.flickity-viewport {
+	height: 100px;
+}
+
+@media (min-width: 425px) {
+	.carousel-cell {
+		width: 30%;
+	}
+}
+
+@media (min-width: 1024px) {
+	.carousel-cell {
+		width: 20%;
+	}
+}

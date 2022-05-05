@@ -1,0 +1,12 @@
+
+@media (min-width: 425px) {
+    @import "components/media-queries/sm-up/base";
+
+}
+
+
+@media (min-width: 1024px) {
+    @import "components/media-queries/lg-up/header";
+    @import "components/media-queries/lg-up/footer";
+}
+

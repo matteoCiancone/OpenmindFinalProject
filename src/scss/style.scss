@@ -1,5 +1,10 @@
+//Bootstrap style
+@import "bootstrap/bootstrap.scss";
+
+
 @import "partials/variables";
 @import "partials/reset";
+@import "partials/components/default/base";
 @import "partials/components/header";
 @import "partials/components/carousel";
 @import "partials/components/footer";

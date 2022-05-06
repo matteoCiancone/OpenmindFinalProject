@@ -36,8 +36,13 @@ header {
 	padding: 10px;
 	display: inline-block;
 	position: absolute;
-	top: 5px;
+	top: 8px;
 	left: 10px;
+	.btnHome{
+		svg {
+			margin-right: 10px;
+		}
+	}
 }
 .navBtn {
 	background: none;

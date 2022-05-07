@@ -6561,6 +6561,25 @@ header {
   margin: 2px;
 }
 
+.imgIcons {
+  position: absolute;
+}
+.imgIcons .tagNew {
+  position: absolute;
+  top: 5px;
+  left: 5px;
+}
+.imgIcons .favouriteIcon {
+  position: absolute;
+  top: 5px;
+  left: 130px;
+}
+.imgIcons .numberIcon {
+  position: absolute;
+  top: 145px;
+  left: 5px;
+}
+
 .carousel {
   background: #EEE;
 }

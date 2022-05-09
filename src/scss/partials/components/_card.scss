@@ -41,3 +41,25 @@
 .gridIcons {
     display: none;
 }
+
+.price {
+    font-weight: 700;
+    font-size: 1.2rem;
+    position: relative;
+
+    span {
+        font-weight: 400;
+        font-size: 1rem;
+        text-decoration: line-through;
+    }
+
+    svg {
+        position: absolute;
+        right: 10%;
+    }
+}
+
+.card-text {
+    font-size: 1.2rem;
+    font-weight: 700;
+}

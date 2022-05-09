@@ -1,21 +1,43 @@
-.imgIcons {
+.card {
+    background-color: $background-color_white_dirty;
+}
+
+.gridBtn4 {
+    cursor: pointer;
+}
+
+.gridBtn6 {
+    cursor: pointer;
+}
+
+
+.card-media {
+    position: relative;
+}
+
+.tagNew {
     position: absolute;
+    top: 4%;
+    left: 4%;
 
-    .tagNew {
-        position: absolute;
-        top: 5px;
-        left: 5px;
-    }
+}
 
-    .favouriteIcon {
-        position: absolute;
-        top: 5px;
-        left: 130px;
-    }
+.favoriteIcon {
+    position: absolute;
+    top: 4%;
+    left: 88%;
+}
 
-    .numberIcon {
-        position: absolute;
-        top: 145px;
-        left: 5px;
-    }
+.numberIcon {
+    position: absolute;
+    top: 88%;
+    left: 4%;
+}
+
+.numProducts {
+    display: none;
+}
+
+.gridIcons {
+    display: none;
 }

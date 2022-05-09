@@ -1,0 +1,33 @@
+@media (min-width: 1024px) {
+    .card {
+        background-color: $background-color_main;
+    }
+
+    .tagNew {
+        rect {
+            display: none;
+        }
+    }
+
+    .numberIcon {
+        top: 92%;
+
+        rect {
+            display: none;
+        }
+    }
+
+    .numProducts {
+        display: block;
+        text-align: end;
+    }
+
+    .results {
+        display: none;
+    }
+
+    .gridIcons {
+        display: block;
+    }
+
+}

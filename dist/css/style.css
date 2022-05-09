@@ -6561,23 +6561,46 @@ header {
   margin: 2px;
 }
 
-.imgIcons {
-  position: absolute;
+.card {
+  background-color: #F5F5F5;
 }
-.imgIcons .tagNew {
-  position: absolute;
-  top: 5px;
-  left: 5px;
+
+.gridBtn4 {
+  cursor: pointer;
 }
-.imgIcons .favouriteIcon {
-  position: absolute;
-  top: 5px;
-  left: 130px;
+
+.gridBtn6 {
+  cursor: pointer;
 }
-.imgIcons .numberIcon {
+
+.card-media {
+  position: relative;
+}
+
+.tagNew {
   position: absolute;
-  top: 145px;
-  left: 5px;
+  top: 4%;
+  left: 4%;
+}
+
+.favoriteIcon {
+  position: absolute;
+  top: 4%;
+  left: 88%;
+}
+
+.numberIcon {
+  position: absolute;
+  top: 88%;
+  left: 4%;
+}
+
+.numProducts {
+  display: none;
+}
+
+.gridIcons {
+  display: none;
 }
 
 .carousel {
@@ -6745,18 +6768,50 @@ header {
     font-weight: 700;
     padding: 10px 20px;
   }
+}
+@media (min-width: 1024px) and (min-width: 1024px) {
+  .card {
+    background-color: white;
+  }
 
+  .tagNew rect {
+    display: none;
+  }
+
+  .numberIcon {
+    top: 92%;
+  }
+  .numberIcon rect {
+    display: none;
+  }
+
+  .numProducts {
+    display: block;
+    text-align: end;
+  }
+
+  .results {
+    display: none;
+  }
+
+  .gridIcons {
+    display: block;
+  }
+}
+@media (min-width: 1024px) {
   .carousel-cell {
     width: 20%;
   }
-
+}
+@media (min-width: 1024px) {
   footer {
     background-color: white;
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
   }
-
+}
+@media (min-width: 1024px) {
   .social {
     flex-basis: 100%;
     display: flex;
@@ -6770,11 +6825,13 @@ header {
   .social ul li {
     padding: 0px 20px;
   }
-
+}
+@media (min-width: 1024px) {
   .accordion {
     display: none;
   }
-
+}
+@media (min-width: 1024px) {
   .info {
     width: 50%;
     display: flex;
@@ -6784,7 +6841,8 @@ header {
   .info h2 {
     font-size: 2rem;
   }
-
+}
+@media (min-width: 1024px) {
   .list {
     display: inline-block;
     background-color: white;
@@ -6805,13 +6863,15 @@ header {
     position: absolute;
     top: 60px;
   }
-
+}
+@media (min-width: 1024px) {
   .listTitle {
     font-size: 1.6rem;
     font-weight: 700;
     line-height: 1.5;
   }
-
+}
+@media (min-width: 1024px) {
   .form {
     display: flex;
     flex-basis: 100%;
@@ -6822,7 +6882,8 @@ header {
     margin-left: 15px;
     cursor: pointer;
   }
-
+}
+@media (min-width: 1024px) {
   .footerBanner {
     flex-basis: 100%;
     padding: 0;
@@ -6831,7 +6892,8 @@ header {
   .footerBanner svg {
     padding: 0px 10px;
   }
-
+}
+@media (min-width: 1024px) {
   .footerBannerText {
     display: flex;
     justify-content: center;

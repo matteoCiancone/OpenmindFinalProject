@@ -6603,6 +6603,26 @@ header {
   display: none;
 }
 
+.price {
+  font-weight: 700;
+  font-size: 1.2rem;
+  position: relative;
+}
+.price span {
+  font-weight: 400;
+  font-size: 1rem;
+  text-decoration: line-through;
+}
+.price svg {
+  position: absolute;
+  right: 10%;
+}
+
+.card-text {
+  font-size: 1.2rem;
+  font-weight: 700;
+}
+
 .carousel {
   background: #EEE;
 }
@@ -6796,6 +6816,10 @@ header {
 
   .gridIcons {
     display: block;
+  }
+
+  .product-grid h1 {
+    text-align: center;
   }
 }
 @media (min-width: 1024px) {

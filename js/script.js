@@ -17,3 +17,20 @@ function displayRow6() {
     document.querySelector(".gridBtn4").style.opacity = "50%"
     document.querySelector(".gridBtn6").style.opacity = "100%"
 }
+
+/************CARD CLONE**********/
+
+let card = document.querySelector(".cardColGrid4");
+
+for (let i = 0; i < 15; i++) {
+    let copy = card.cloneNode(true);
+    card.parentNode.appendChild(copy)
+}
+
+
+let card2 = document.querySelector(".cardColGrid6");
+
+for (let i = 0; i < 17; i++) {
+    let copy2 = card2.cloneNode(true);
+    card2.parentNode.appendChild(copy2)
+}

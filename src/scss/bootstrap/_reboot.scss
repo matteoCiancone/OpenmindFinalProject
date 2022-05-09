@@ -26,7 +26,7 @@
 // null by default, thus nothing is generated.
 
 :root {
-  @if $font-size-root != null {
+  @if $font-size-root  !=null {
     font-size: var(--#{$variable-prefix}root-font-size);
   }
 
@@ -58,6 +58,7 @@ body {
   -webkit-text-size-adjust: 100%; // 3
   -webkit-tap-highlight-color: rgba($black, 0); // 4
 }
+
 // scss-docs-end reboot-body-rules
 
 
@@ -88,17 +89,12 @@ hr:not([size]) {
 %heading {
   margin-top: 0; // 1
   margin-bottom: $headings-margin-bottom;
-  font-family: $headings-font-family;
-  font-style: $headings-font-style;
   font-weight: $headings-font-weight;
   line-height: $headings-line-height;
   color: $headings-color;
 }
 
-h1 {
-  @extend %heading;
-  @include font-size($h1-font-size);
-}
+
 
 h2 {
   @extend %heading;
@@ -145,7 +141,8 @@ p {
 // 4. Prevent the text-decoration to be skipped.
 
 abbr[title],
-abbr[data-bs-original-title] { // 1
+abbr[data-bs-original-title] {
+  // 1
   text-decoration: underline dotted; // 2
   cursor: help; // 3
   text-decoration-skip-ink: none; // 4
@@ -241,8 +238,13 @@ sup {
   vertical-align: baseline;
 }
 
-sub { bottom: -.25em; }
-sup { top: -.5em; }
+sub {
+  bottom: -.25em;
+}
+
+sup {
+  top: -.5em;
+}
 
 
 // Links
@@ -263,6 +265,7 @@ a {
 // See https://github.com/twbs/bootstrap/issues/19402
 
 a:not([href]):not([class]) {
+
   &,
   &:hover {
     color: inherit;
@@ -309,7 +312,7 @@ code {
   word-wrap: break-word;
 
   // Streamline the style when inside anchors to avoid broken underline and more
-  a > & {
+  a>& {
     color: inherit;
   }
 }
@@ -427,6 +430,7 @@ button,
 select {
   text-transform: none;
 }
+
 // Set the cursor for non-`<button>` buttons
 //
 // Details at https://github.com/twbs/bootstrap/pull/30562
@@ -458,7 +462,8 @@ select {
 // 3. Opinionated: add "hand" cursor to non-disabled button elements.
 
 button,
-[type="button"], // 1
+[type="button"],
+// 1
 [type="reset"],
 [type="submit"] {
   -webkit-appearance: button; // 2
@@ -511,7 +516,7 @@ legend {
   font-weight: $legend-font-weight;
   line-height: inherit;
 
-  + * {
+  +* {
     clear: left; // 2
   }
 }

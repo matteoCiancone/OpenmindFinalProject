@@ -12,15 +12,24 @@
 
 .breadcrumb {
     li {
+        list-style: none;
+        display: inline-block;
+
         a {
             text-decoration: none;
             color: black;
             font-weight: 700;
+
+            svg {
+                position: absolute;
+                left: 2%;
+                top: 12.15%;
+            }
         }
     }
 }
 
-.carousel {
+.carouselSp {
     display: none;
 }
 

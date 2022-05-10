@@ -6,3 +6,20 @@
 .grid {
     display: none;
 }
+
+.accordionBtnSp {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 20px;
+    background-color: $background-color_white_dirty;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-align: start;
+    position: relative;
+}
+
+.plusIcon {
+    position: absolute;
+    right: 10px;
+}

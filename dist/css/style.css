@@ -172,6 +172,23 @@ header {
   display: none;
 }
 
+.accordionBtnSp {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid #ddd;
+  padding: 12px 20px;
+  background-color: #F5F5F5;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-align: start;
+  position: relative;
+}
+
+.plusIcon {
+  position: absolute;
+  right: 10px;
+}
+
 .carousel {
   background: #EEE;
 }
@@ -387,14 +404,23 @@ header {
   }
 }
 @media (min-width: 1024px) {
+  .breadcrumb li {
+    list-style: none;
+    display: inline-block;
+  }
   .breadcrumb li a {
     text-decoration: none;
     color: black;
     font-weight: 700;
   }
+  .breadcrumb li a svg {
+    position: absolute;
+    left: 2%;
+    top: 12.15%;
+  }
 }
 @media (min-width: 1024px) {
-  .carousel {
+  .carouselSp {
     display: none;
   }
 }

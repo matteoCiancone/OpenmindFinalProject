@@ -168,6 +168,10 @@ header {
   background-color: #F5F5F5;
 }
 
+.grid {
+  display: none;
+}
+
 .carousel {
   background: #EEE;
 }
@@ -387,6 +391,21 @@ header {
     text-decoration: none;
     color: black;
     font-weight: 700;
+  }
+}
+@media (min-width: 1024px) {
+  .carousel {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 325px;
+  }
+  .grid .grid-item img {
+    max-height: 325px;
   }
 }
 @media (min-width: 1024px) {

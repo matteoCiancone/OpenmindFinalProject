@@ -1,0 +1,21 @@
+.breadcrumbContainer {
+    display: block;
+}
+
+.tagSp {
+    display: none;
+}
+
+.favoriteSp {
+    display: none;
+}
+
+.breadcrumb {
+    li {
+        a {
+            text-decoration: none;
+            color: black;
+            font-weight: 700;
+        }
+    }
+}

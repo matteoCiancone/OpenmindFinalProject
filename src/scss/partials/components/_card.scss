@@ -10,6 +10,12 @@
     cursor: pointer;
 }
 
+.card-body {
+    a {
+        text-decoration: none;
+        color: black;
+    }
+}
 
 .card-media {
     position: relative;
@@ -25,12 +31,12 @@
 .favoriteIcon {
     position: absolute;
     top: 4%;
-    left: 88%;
+    right: 4%;
 }
 
 .numberIcon {
     position: absolute;
-    top: 88%;
+    bottom: 6%;
     left: 4%;
 }
 
@@ -55,7 +61,7 @@
 
     svg {
         position: absolute;
-        right: 10%;
+        right: 4%;
     }
 }
 

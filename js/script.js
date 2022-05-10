@@ -20,7 +20,7 @@ function displayRow6() {
 
 /************CARD CLONE**********/
 
-let card = document.querySelector(".cardColGrid4");
+const card = document.querySelector(".cardColGrid4");
 
 for (let i = 0; i < 15; i++) {
     let copy = card.cloneNode(true);
@@ -28,7 +28,7 @@ for (let i = 0; i < 15; i++) {
 }
 
 
-let card2 = document.querySelector(".cardColGrid6");
+const card2 = document.querySelector(".cardColGrid6");
 
 for (let i = 0; i < 17; i++) {
     let copy2 = card2.cloneNode(true);

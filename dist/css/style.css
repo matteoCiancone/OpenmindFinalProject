@@ -6573,6 +6573,11 @@ header {
   cursor: pointer;
 }
 
+.card-body a {
+  text-decoration: none;
+  color: black;
+}
+
 .card-media {
   position: relative;
 }
@@ -6586,12 +6591,12 @@ header {
 .favoriteIcon {
   position: absolute;
   top: 4%;
-  left: 88%;
+  right: 4%;
 }
 
 .numberIcon {
   position: absolute;
-  top: 88%;
+  bottom: 6%;
   left: 4%;
 }
 
@@ -6615,7 +6620,7 @@ header {
 }
 .price svg {
   position: absolute;
-  right: 10%;
+  right: 4%;
 }
 
 .card-text {

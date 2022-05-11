@@ -1,8 +1,9 @@
 .breadcrumbContainer {
     display: block;
+    padding: 10px;
 }
 
-.tagSp {
+.tagNewSp {
     display: none;
 }
 
@@ -19,12 +20,6 @@
             text-decoration: none;
             color: black;
             font-weight: 700;
-
-            svg {
-                position: absolute;
-                left: 2%;
-                top: 12.15%;
-            }
         }
     }
 }
@@ -35,7 +30,7 @@
 
 .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 325px;
 
     .grid-item {
@@ -43,4 +38,59 @@
             max-height: 325px;
         }
     }
+
+    .grid-item-text {
+        width: 33vw;
+
+        .body-sp {
+            padding: 0px 0px 0 30px;
+
+            h2 {
+                margin: 0;
+                font-size: 2rem;
+            }
+
+            .text-sp {
+                margin: 0 0 10px;
+            }
+
+            .priceSp {
+                font-weight: 700;
+                font-size: 1.4rem;
+            }
+
+            .delPriceSp {
+                margin: 0 5px 0 5px;
+                text-decoration: line-through;
+                font-weight: 400;
+            }
+
+        }
+
+        .addCartBtn {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 0;
+            color: $text-color_white;
+            background-color: $background-color_black;
+            width: 100%;
+            padding: 10px;
+            margin-top: 35px;
+
+            svg {
+                margin-left: 10px;
+            }
+        }
+
+    }
+}
+
+.card-body-sp {
+    display: none;
+}
+
+.accordionSingleProduct {
+    width: 65vw;
+    padding: 0px 50px 0 40px;
 }

@@ -163,34 +163,61 @@ header {
   font-weight: 700;
 }
 
+body {
+  background-color: white;
+}
+
 .breadcrumbContainer {
   display: none;
-  background-color: #F5F5F5;
 }
 
 .grid {
   display: none;
 }
 
-.accordionBtnSp {
-  width: 100%;
-  border: none;
-  border-bottom: 1px solid #ddd;
-  padding: 12px 20px;
+.card-body-sp {
+  padding: 20px;
   background-color: #F5F5F5;
-  font-size: 1.6rem;
+}
+.card-body-sp h2 {
+  margin: 0;
+}
+.card-body-sp .card-text-sp {
+  margin: 0px 0px 10px;
+}
+.card-body-sp .priceSp {
+  font-size: 1.5rem;
   font-weight: 700;
-  text-align: start;
-  position: relative;
+}
+.card-body-sp .priceSp .delPriceSp {
+  margin: 0 5px 0 5px;
+  text-decoration: line-through;
+  font-weight: 400;
+}
+.card-body-sp .addCartBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: white;
+  background-color: black;
+  width: 100%;
+  padding: 10px;
+}
+.card-body-sp .addCartBtn svg {
+  margin-left: 10px;
 }
 
-.plusIcon {
-  position: absolute;
-  right: 10px;
+.accordionSingleProduct {
+  margin: 30px 0 30px 0;
+}
+
+.main-carousel {
+  background-color: #F5F5F5;
 }
 
 .carousel {
-  background: #EEE;
+  background-color: #F5F5F5;
 }
 
 .carousel-cell {
@@ -391,10 +418,11 @@ header {
 @media (min-width: 1024px) {
   .breadcrumbContainer {
     display: block;
+    padding: 10px;
   }
 }
 @media (min-width: 1024px) {
-  .tagSp {
+  .tagNewSp {
     display: none;
   }
 }
@@ -413,11 +441,6 @@ header {
     color: black;
     font-weight: 700;
   }
-  .breadcrumb li a svg {
-    position: absolute;
-    left: 2%;
-    top: 12.15%;
-  }
 }
 @media (min-width: 1024px) {
   .carouselSp {
@@ -427,11 +450,58 @@ header {
 @media (min-width: 1024px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 325px;
   }
   .grid .grid-item img {
     max-height: 325px;
+  }
+  .grid .grid-item-text {
+    width: 33vw;
+  }
+  .grid .grid-item-text .body-sp {
+    padding: 0px 0px 0 30px;
+  }
+  .grid .grid-item-text .body-sp h2 {
+    margin: 0;
+    font-size: 2rem;
+  }
+  .grid .grid-item-text .body-sp .text-sp {
+    margin: 0 0 10px;
+  }
+  .grid .grid-item-text .body-sp .priceSp {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .grid .grid-item-text .body-sp .delPriceSp {
+    margin: 0 5px 0 5px;
+    text-decoration: line-through;
+    font-weight: 400;
+  }
+  .grid .grid-item-text .addCartBtn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    margin-top: 35px;
+  }
+  .grid .grid-item-text .addCartBtn svg {
+    margin-left: 10px;
+  }
+}
+@media (min-width: 1024px) {
+  .card-body-sp {
+    display: none;
+  }
+}
+@media (min-width: 1024px) {
+  .accordionSingleProduct {
+    width: 65vw;
+    padding: 0px 50px 0 40px;
   }
 }
 @media (min-width: 1024px) {

@@ -1,25 +1,60 @@
+body {
+    background-color: $background-color_main;
+}
+
+
 .breadcrumbContainer {
     display: none;
-    background-color: $background-color_white_dirty ;
+
 }
 
 .grid {
     display: none;
 }
 
-.accordionBtnSp {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid #ddd;
-    padding: 12px 20px;
+.card-body-sp {
+    padding: 20px;
     background-color: $background-color_white_dirty;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-align: start;
-    position: relative;
+
+    h2 {
+        margin: 0;
+    }
+
+    .card-text-sp {
+        margin: 0px 0px 10px;
+    }
+
+    .priceSp {
+        font-size: 1.5rem;
+        font-weight: 700;
+
+        .delPriceSp {
+            margin: 0 5px 0 5px;
+            text-decoration: line-through;
+            font-weight: 400;
+        }
+    }
+
+    .addCartBtn {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 0;
+        color: $text-color_white;
+        background-color: $background-color_black;
+        width: 100%;
+        padding: 10px;
+
+        svg {
+            margin-left: 10px;
+        }
+    }
 }
 
-.plusIcon {
-    position: absolute;
-    right: 10px;
+.accordionSingleProduct {
+    margin: 30px 0 30px 0;
+}
+
+.main-carousel {
+    background-color: $background-color_white_dirty;
 }

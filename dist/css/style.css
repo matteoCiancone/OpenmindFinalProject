@@ -468,6 +468,7 @@ body {
   }
   .grid .grid-item-text .body-sp .text-sp {
     margin: 0 0 10px;
+    font-size: 1.2rem;
   }
   .grid .grid-item-text .body-sp .priceSp {
     font-weight: 700;

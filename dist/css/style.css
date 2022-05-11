@@ -102,10 +102,12 @@ header {
 
 .gridBtn4 {
   cursor: pointer;
+  background: none;
 }
 
 .gridBtn6 {
   cursor: pointer;
+  background: none;
 }
 
 .card-body a {
@@ -116,6 +118,13 @@ header {
 .card-media {
   position: relative;
 }
+.card-media .prodImg:hover {
+  opacity: 70%;
+  cursor: default;
+}
+.card-media .prodImg:hover {
+  transition: transform 1s;
+}
 
 .tagNew {
   position: absolute;
@@ -123,10 +132,18 @@ header {
   left: 4%;
 }
 
-.favoriteIcon {
+.addWishlistBtn {
   position: absolute;
-  top: 4%;
-  right: 4%;
+  right: 2%;
+  border: 0;
+  background: none;
+  height: 45px;
+  width: 50px;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.addWishlistBtn:hover {
+  transform: scale(1.4);
 }
 
 .numberIcon {
@@ -161,6 +178,14 @@ header {
 .card-text {
   font-size: 1.2rem;
   font-weight: 700;
+}
+
+.gallery:hover {
+  box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.45);
+}
+
+.gallery {
+  transition: box-shadow 0.4s;
 }
 
 body {
@@ -385,6 +410,23 @@ body {
 @media (min-width: 1024px) and (min-width: 1024px) {
   .card {
     background-color: white;
+  }
+  .card .card-title,
+.card .card-text {
+    padding: 0 10px 0 10px;
+  }
+  .card .card-title {
+    margin-top: 10px;
+  }
+  .card .card-text {
+    margin-top: 0;
+  }
+  .card .price {
+    font-weight: 700;
+    font-size: 1.4rem;
+  }
+  .card .price span {
+    font-weight: 400;
   }
 
   .tagNew rect {

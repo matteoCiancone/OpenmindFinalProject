@@ -1,6 +1,28 @@
 @media (min-width: 1024px) {
     .card {
         background-color: $background-color_main;
+
+        .card-title,
+        .card-text {
+            padding: 0 10px 0 10px;
+        }
+
+        .card-title {
+            margin-top: 10px;
+        }
+
+        .card-text {
+            margin-top: 0;
+        }
+
+        .price {
+            font-weight: 700;
+            font-size: 1.4rem;
+
+            span {
+                font-weight: 400;
+            }
+        }
     }
 
     .tagNew {

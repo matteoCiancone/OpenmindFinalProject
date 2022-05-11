@@ -24,21 +24,52 @@ document.querySelector(".gridBtn6").addEventListener("click", displayRow6);
 
 /************CARD CLONE**********/
 
-const card = document.querySelector(".cardColGrid4");
+let n = 1;
+const card1 = document.querySelector('.cardCol4');
+const card2 = document.querySelector('.cardCol6');
 
-for (let i = 0; i < 15; i++) {
-    let n = 1;
-    let copy = card.cloneNode(true);
-    copy.id = "card" + " " + n++;
-    card.parentNode.appendChild(copy);
+function cloneCard() {
+    let copy = card1.cloneNode(true);
+    copy.id = ++n;  //Assegno e incremento il numero nell'id
+    card1.parentNode.appendChild(copy);
+}
+function cloneCard2() {
+    let copy = card2.cloneNode(true);
+    copy.id = ++n;  //Assegno e incremento il numero nell'id
+    card2.parentNode.appendChild(copy);
 }
 
-const card2 = document.querySelector(".cardColGrid6");
-
 for (let i = 0; i < 15; i++) {
-    let n = 1;
-    let copy2 = card2.cloneNode(true);
-    copy2.id = "card" + " " + n++;
-    card2.parentNode.appendChild(copy2);
+    cloneCard()
 }
 
+for (let i = 0; i < 15; i++) {
+    cloneCard2()
+}
+
+
+/************WISHLIST**********/
+
+const addWishlistBtn = document.querySelectorAll(".addWishlistBtn");
+const wishlist = [];
+
+addWishlistBtn.forEach(btn => {
+    btn.addEventListener("click", addToWishlist);
+})
+
+function addToWishlist(e) {
+    const productId = e.id;
+    wishlist.push(productId);
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+
+}
+
+function initWishlist() {
+    const wishListLocalStorage = (JSON.parse(localStorage.getItem("wishlist")));
+    if (wishListLocalStorage) {
+        wishlist.push(...wishListLocalStorage);
+    }
+    console.log(wishlist);
+}
+
+initWishlist()

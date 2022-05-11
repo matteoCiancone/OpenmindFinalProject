@@ -4,10 +4,12 @@
 
 .gridBtn4 {
     cursor: pointer;
+    background: none;
 }
 
 .gridBtn6 {
     cursor: pointer;
+    background: none;
 }
 
 .card-body {
@@ -19,6 +21,15 @@
 
 .card-media {
     position: relative;
+
+    .prodImg:hover {
+        opacity: 70%;
+        cursor: default;
+
+        & {
+            transition: transform 1s;
+        }
+    }
 }
 
 .tagNew {
@@ -28,10 +39,19 @@
 
 }
 
-.favoriteIcon {
+.addWishlistBtn {
     position: absolute;
-    top: 4%;
-    right: 4%;
+    right: 2%;
+    border: 0;
+    background: none;
+    height: 45px;
+    width: 50px;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    &:hover {
+        transform: scale(1.4);
+    }
 }
 
 .numberIcon {
@@ -68,4 +88,12 @@
 .card-text {
     font-size: 1.2rem;
     font-weight: 700;
+}
+
+.gallery:hover {
+    box-shadow: 1px 1px 15px 5px rgba(0, 0, 0, 0.45);
+}
+
+.gallery {
+    transition: box-shadow 0.4s;
 }

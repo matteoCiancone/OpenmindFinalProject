@@ -30,12 +30,11 @@ const card2 = document.querySelector('.cardCol6');
 
 function cloneCard() {
     let copy = card1.cloneNode(true);
-    copy.id = ++n;  //Assegno e incremento il numero nell'id
+    copy.id = "product-" + ++n;
     card1.parentNode.appendChild(copy);
 }
 function cloneCard2() {
     let copy = card2.cloneNode(true);
-    copy.id = ++n;  //Assegno e incremento il numero nell'id
     card2.parentNode.appendChild(copy);
 }
 
@@ -50,26 +49,55 @@ for (let i = 0; i < 15; i++) {
 
 /************WISHLIST**********/
 
-const addWishlistBtn = document.querySelectorAll(".addWishlistBtn");
+const addWishlistBtn = document.querySelectorAll(".favoriteIcon");
+const removeFromWishlistBtn = document.querySelectorAll(".favoriteIconRed");
 const wishlist = [];
+let y = 1;
+let x = 1;
 
 addWishlistBtn.forEach(btn => {
+    btn.setAttribute("data-id", y++);
     btn.addEventListener("click", addToWishlist);
 })
 
+removeFromWishlistBtn.forEach(btn => {
+    btn.setAttribute("data-id", x++);
+    btn.addEventListener("click", removeFromWishlist);
+})
+
 function addToWishlist(e) {
-    const productId = e.id;
+    const productId = e.target.dataset.id;
     wishlist.push(productId);
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    updateWishlist();
+}
 
+function removeFromWishlist(e) {
+    const productId = e.target.dataset.id;
+    const indexToRemove = wishlist.findIndex(prod => prod === productId);
+    wishlist.splice(indexToRemove, 1);
+    localStorage.setItem("wishlist", JSON.stringify(wishlist));
+    updateWishlist();
+}
+
+
+function updateWishlist() {
+    removeFromWishlistBtn.forEach((btn) => {
+        if (wishlist.includes(btn.dataset.id)) {
+            btn.removeAttribute("hidden");
+            btn.previousElementSibling.setAttribute("hidden", "hidden");
+        } else {
+            btn.setAttribute("hidden", "hidden");
+            btn.previousElementSibling.removeAttribute("hidden");
+        }
+    })
 }
 
 function initWishlist() {
-    const wishListLocalStorage = (JSON.parse(localStorage.getItem("wishlist")));
+    const wishListLocalStorage = JSON.parse(localStorage.getItem("wishlist"));
     if (wishListLocalStorage) {
         wishlist.push(...wishListLocalStorage);
     }
-    console.log(wishlist);
+    updateWishlist();
 }
-
-initWishlist()
+initWishlist();

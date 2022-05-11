@@ -134,11 +134,10 @@ header {
 
 .addWishlistBtn {
   position: absolute;
-  right: 2%;
+  right: 4%;
+  top: 4%;
   border: 0;
   background: none;
-  height: 45px;
-  width: 50px;
   cursor: pointer;
   transition: transform 0.3s;
 }
@@ -462,6 +461,9 @@ body {
     display: block;
     padding: 10px;
   }
+  .breadcrumbContainer .breadcrumb-item {
+    padding: 0 3px 0 3px;
+  }
 }
 @media (min-width: 1024px) {
   .tagNewSp {
@@ -474,6 +476,10 @@ body {
   }
 }
 @media (min-width: 1024px) {
+  .breadcrumb {
+    padding-left: 10px;
+    display: flex;
+  }
   .breadcrumb li {
     list-style: none;
     display: inline-block;
@@ -482,6 +488,9 @@ body {
     text-decoration: none;
     color: black;
     font-weight: 700;
+  }
+  .breadcrumb li svg {
+    margin-right: 10px;
   }
 }
 @media (min-width: 1024px) {
@@ -521,10 +530,13 @@ body {
     text-decoration: line-through;
     font-weight: 400;
   }
+  .grid .grid-item-text .cartBtn {
+    display: flex;
+  }
   .grid .grid-item-text .addCartBtn {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
     border: 0;
     color: white;
     background-color: black;
@@ -532,8 +544,15 @@ body {
     padding: 10px;
     margin-top: 35px;
   }
-  .grid .grid-item-text .addCartBtn svg {
-    margin-left: 10px;
+  .grid .grid-item-text .favoriteBtnSp {
+    border: 0;
+    color: white;
+    background-color: black;
+    width: 100%;
+    padding: 10px;
+    margin-top: 35px;
+    width: 40px;
+    border-left: 2px solid grey;
   }
 }
 @media (min-width: 1024px) {
@@ -543,7 +562,7 @@ body {
 }
 @media (min-width: 1024px) {
   .accordionSingleProduct {
-    width: 60vw;
+    width: 600px;
     padding: 0px 0 0 40px;
   }
 }

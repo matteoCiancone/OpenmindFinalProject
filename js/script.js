@@ -49,7 +49,7 @@ for (let i = 0; i < 15; i++) {
 
 /************WISHLIST**********/
 
-const addWishlistBtn = document.querySelectorAll(".favoriteIcon");
+const addWishlistBtn = document.querySelectorAll(".addWishlistBtn");
 const removeFromWishlistBtn = document.querySelectorAll(".removeWishlistBtn");
 const wishlist = [];
 let y = 1;
@@ -79,6 +79,7 @@ function removeFromWishlist(e) {
     localStorage.setItem("wishlist", JSON.stringify(wishlist));
     updateWishlist();
 }
+
 
 
 function updateWishlist() {

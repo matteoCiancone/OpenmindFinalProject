@@ -53,6 +53,11 @@
     }
 }
 
+.addWishlistBtn *,
+.removeWishlistBtn * {
+    pointer-events: none; //non fa prendere svg
+}
+
 .removeWishlistBtn {
     position: absolute;
     right: 4%;

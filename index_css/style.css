@@ -300,6 +300,27 @@ header {
     position: relative;
 }
 
+.panel {
+    padding: 0 18px;
+    display: none;
+    background-color: white;
+    overflow: hidden;
+}
+
+.panel ul li {
+    list-style: none;
+    margin-bottom: 5px;
+}
+
+.panel ul {
+    padding: 0;
+}
+
+.panel ul li a {
+    text-decoration: none;
+    color: black;
+}
+
 .plusIcon {
     position: absolute;
     right: 10px;

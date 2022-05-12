@@ -145,6 +145,11 @@ header {
   transform: scale(1.4);
 }
 
+.addWishlistBtn *,
+.removeWishlistBtn * {
+  pointer-events: none;
+}
+
 .removeWishlistBtn {
   position: absolute;
   right: 4%;
@@ -323,6 +328,19 @@ body {
   font-weight: 700;
   text-align: start;
   position: relative;
+}
+.accordionBtn .panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+.accordionBtn .panel ul {
+  padding: 0;
+}
+.accordionBtn .panel ul li {
+  list-style: none;
+  margin-bottom: 5px;
 }
 
 .plusIcon {

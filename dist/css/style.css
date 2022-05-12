@@ -145,6 +145,19 @@ header {
   transform: scale(1.4);
 }
 
+.removeWishlistBtn {
+  position: absolute;
+  right: 4%;
+  top: 4%;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+.removeWishlistBtn:hover {
+  transform: scale(1.4);
+}
+
 .numberIcon {
   position: absolute;
   bottom: 6%;
@@ -640,15 +653,18 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  .form {
+  form {
     display: flex;
     flex-basis: 100%;
-    margin-bottom: 15px;
   }
-  .form .inputBtn {
+  form .inputBtn {
     height: 40px;
     margin-left: 15px;
     cursor: pointer;
+  }
+  form #email {
+    margin: 0;
+    width: 270px;
   }
 }
 @media (min-width: 1024px) {

@@ -50,7 +50,7 @@ for (let i = 0; i < 15; i++) {
 /************WISHLIST**********/
 
 const addWishlistBtn = document.querySelectorAll(".favoriteIcon");
-const removeFromWishlistBtn = document.querySelectorAll(".favoriteIconRed");
+const removeFromWishlistBtn = document.querySelectorAll(".removeWishlistBtn");
 const wishlist = [];
 let y = 1;
 let x = 1;

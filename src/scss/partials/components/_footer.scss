@@ -50,32 +50,48 @@
 	font-weight: 700;
 	text-align: start;
 	position: relative;
+	display: flex;
+	align-items: center;
 
-	.panel {
-		padding: 0 18px;
-		display: none;
-		background-color: white;
-		overflow: hidden;
+	&::after {
+		content: '\002B';
+		color: black;
+		font-weight: 400;
+		font-size: 3rem;
+		position: absolute;
+		right: 10px;
+	}
 
-		ul {
-			padding: 0;
+	svg {
+		margin-right: 5px;
+	}
+}
 
+.panel {
+	padding: 0 18px;
+	display: none;
+	background-color: white;
+	overflow: hidden;
 
-			li {
-				list-style: none;
-				margin-bottom: 5px;
+	ul {
+		padding: 0;
+
+		li {
+			list-style: none;
+			margin-bottom: 5px;
+
+			a {
+				text-decoration: none;
+				color: black;
 			}
 		}
 	}
-
 }
 
-
-
-.plusIcon {
-	position: absolute;
-	right: 10px;
+.active::after {
+	content: "\2212";
 }
+
 
 .social {
 	background-color: $background-color_main;

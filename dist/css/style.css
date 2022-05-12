@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*$custom-colors: (
   "dirty-white": #f5f5f5
 );
@@ -328,24 +329,41 @@ body {
   font-weight: 700;
   text-align: start;
   position: relative;
+  display: flex;
+  align-items: center;
 }
-.accordionBtn .panel {
+.accordionBtn::after {
+  content: "+";
+  color: black;
+  font-weight: 400;
+  font-size: 3rem;
+  position: absolute;
+  right: 10px;
+}
+.accordionBtn svg {
+  margin-right: 5px;
+}
+
+.panel {
   padding: 0 18px;
   display: none;
   background-color: white;
   overflow: hidden;
 }
-.accordionBtn .panel ul {
+.panel ul {
   padding: 0;
 }
-.accordionBtn .panel ul li {
+.panel ul li {
   list-style: none;
   margin-bottom: 5px;
 }
+.panel ul li a {
+  text-decoration: none;
+  color: black;
+}
 
-.plusIcon {
-  position: absolute;
-  right: 10px;
+.active::after {
+  content: "−";
 }
 
 .social {

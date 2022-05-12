@@ -298,7 +298,30 @@ header {
     font-weight: 700;
     text-align: start;
     position: relative;
+    display: flex;
+    align-items: center;
 }
+
+.accordionBtn svg {
+    margin-right: 5px;
+}
+
+
+.accordionBtn::after {
+    content: '\002B';
+    color: black;
+    font-weight: 400;
+    font-size: 3rem;
+    position: absolute;
+    right: 10px;
+}
+
+.active::after {
+    content: "\2212";
+}
+
+
+
 
 .panel {
     padding: 0 18px;
@@ -319,11 +342,6 @@ header {
 .panel ul li a {
     text-decoration: none;
     color: black;
-}
-
-.plusIcon {
-    position: absolute;
-    right: 10px;
 }
 
 

@@ -209,34 +209,12 @@ header {
 
 /**********CAROUSEL***********/
 
-.carousel {
-    background: #EEE;
+.swiperService {
+    background-color: #f5f5f5;
 }
 
-.carousel-cell {
-    width: 50%;
-    height: 160px;
-    margin-right: 10px;
-    padding: 20px;
-}
-
-.flickity-page-dots {
-    display: none;
-}
-
-.flickity-button {
-    display: none;
-}
-
-.flickity-viewport {
-    height: 100px;
-}
-
-@media (min-width: 425px) {
-    .carousel-cell {
-        width: 30%;
-    }
-
+.swiperService svg {
+    padding: 40px 0 20px 0;
 }
 
 /**********FOOTER***********/

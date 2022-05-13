@@ -258,10 +258,6 @@ body {
   margin: 30px 0 30px 0;
 }
 
-.main-carousel {
-  background-color: #F5F5F5;
-}
-
 .swal2-confirm {
   background: black;
   color: white;
@@ -271,7 +267,7 @@ body {
   width: 80px;
 }
 
-.swiper {
+.swiperSp {
   position: relative;
 }
 
@@ -289,27 +285,11 @@ body {
   right: 4%;
 }
 
-.carousel {
+.swiperService {
   background-color: #F5F5F5;
 }
-
-.carousel-cell {
-  width: 50%;
-  height: 160px;
-  margin-right: 10px;
-  padding: 20px;
-}
-
-.flickity-page-dots {
-  display: none;
-}
-
-.flickity-button {
-  display: none;
-}
-
-.flickity-viewport {
-  height: 100px;
+.swiperService svg {
+  padding: 40px 0 20px 0;
 }
 
 .info {
@@ -573,7 +553,7 @@ body {
   }
 }
 @media (min-width: 1024px) {
-  .swiper {
+  .swiperSp {
     display: none;
   }
 }

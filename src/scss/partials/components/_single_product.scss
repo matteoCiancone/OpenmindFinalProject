@@ -55,9 +55,6 @@ body {
     margin: 30px 0 30px 0;
 }
 
-.main-carousel {
-    background-color: $background-color_white_dirty;
-}
 
 .swal2-confirm {
     background: black;
@@ -68,7 +65,7 @@ body {
     width: 80px;
 }
 
-.swiper {
+.swiperSp {
     position: relative;
 }
 
@@ -84,4 +81,12 @@ body {
     z-index: 100;
     top: 2%;
     right: 4%;
+}
+
+.swiperService {
+    background-color: $background-color_white_dirty;
+
+    svg {
+        padding: 40px 0 20px 0;
+    }
 }

@@ -11,3 +11,16 @@ acc.forEach(btn => {
         }
     })
 })
+
+/**********NEWSLETTER******* */
+
+const newsLetterBtn = document.querySelector("#newsLetterBtn");
+const newsLetter = document.querySelector(".newsLetter");
+
+function hideNewsLetter() {
+    newsLetter.setAttribute("hidden", "hidden");
+}
+
+newsLetterBtn.addEventListener("click", hideNewsLetter);
+
+

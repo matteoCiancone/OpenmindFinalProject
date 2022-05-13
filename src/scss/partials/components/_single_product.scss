@@ -58,3 +58,30 @@ body {
 .main-carousel {
     background-color: $background-color_white_dirty;
 }
+
+.swal2-confirm {
+    background: black;
+    color: white;
+    border: 0;
+    border-radius: 0.5rem;
+    padding: 5px;
+    width: 80px;
+}
+
+.swiper {
+    position: relative;
+}
+
+.tagNewSp {
+    position: absolute;
+    top: 2%;
+    left: 4%;
+    z-index: 100;
+}
+
+.favoriteSp {
+    position: absolute;
+    z-index: 100;
+    top: 2%;
+    right: 4%;
+}

@@ -227,12 +227,14 @@ body {
 }
 .card-body-sp h2 {
   margin: 0;
+  font-size: 2rem;
 }
 .card-body-sp .card-text-sp {
   margin: 0px 0px 10px;
+  font-size: 1.4rem;
 }
 .card-body-sp .priceSp {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   font-weight: 700;
 }
 .card-body-sp .priceSp .delPriceSp {
@@ -273,7 +275,7 @@ body {
 
 .tagNewSp {
   position: absolute;
-  top: 2%;
+  top: 4%;
   left: 4%;
   z-index: 100;
 }
@@ -281,7 +283,7 @@ body {
 .favoriteSp {
   position: absolute;
   z-index: 100;
-  top: 2%;
+  top: 4%;
   right: 4%;
 }
 
@@ -623,6 +625,9 @@ body {
   .accordionSingleProduct {
     width: 600px;
     padding: 0px 0 0 40px;
+  }
+  .accordionSingleProduct button {
+    cursor: pointer;
   }
 }
 @media (min-width: 1024px) {

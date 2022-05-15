@@ -1,7 +1,6 @@
 var swiper = new Swiper(".swiperSp", {
     scrollbar: {
         el: ".swiper-scrollbar",
-        hide: true,
     },
     breakpoints: {
 
@@ -17,7 +16,6 @@ var swiper = new Swiper(".swiperService", {
     loop: true,
     scrollbar: {
         el: ".swiper-scrollbar",
-        hide: true,
     },
     breakpoints: {
         320: {

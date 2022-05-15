@@ -1,20 +1,9 @@
 const formBtnSend = document.querySelector(".inputBtn");
-const mailInputValue = document.querySelector("#email").value;
-const mailInput = document.querySelector("#email")
+const mailInput = document.querySelector("#email");
 
-function openModal() {
-    let email_reg_exp = /^([a-zA-Z0-9_.-])+@(([a-zA-Z0-9-]{2,})+.)+([a-zA-Z0-9]{2,})+$/;
-    if ((email_reg_exp.test(mailInputValue)) || (mailInputValue == "")) {
-        Swal.fire({
-            position: 'center',
-            icon: 'error',
-            title: 'You must enter a correct email! ',
-            showConfirmButton: true,
-            buttonsStyling: false,
-        });
-        mailInput.select();
-        return false;
-    } else {
+function checkEmail(email) {
+    let email_reg_exp = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+    if (email_reg_exp.test(mailInput.value)) {
         Swal.fire({
             position: 'center',
             icon: 'success',
@@ -22,7 +11,19 @@ function openModal() {
             showConfirmButton: true,
             buttonsStyling: false,
         });
+        return true;
+    } else {
+        Swal.fire({
+            position: 'center',
+            icon: 'error',
+            title: 'You must enter a correct email! ',
+            showConfirmButton: true,
+            buttonsStyling: false,
+        });
+        return false;
     }
 }
 
-formBtnSend.addEventListener("click", openModal);
+formBtnSend.addEventListener("click", checkEmail);
+
+

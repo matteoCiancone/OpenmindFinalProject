@@ -566,7 +566,7 @@ body {
 @media (min-width: 1024px) {
   .grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3, 1fr);
     width: 325px;
   }
   .grid .grid-item img {

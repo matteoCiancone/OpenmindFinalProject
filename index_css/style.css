@@ -26,7 +26,7 @@ body {
 
 header {
     margin: 0;
-    position: sticky;
+    position: relative;
     background-color: white;
     text-align: center;
 }

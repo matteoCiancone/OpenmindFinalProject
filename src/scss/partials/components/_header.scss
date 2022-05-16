@@ -1,6 +1,11 @@
+.header-container {
+	position: sticky;
+}
+
+
 header {
 	margin: 0;
-	position: sticky;
+	position: relative;
 	background-color: $background-color_main;
 	text-align: center;
 }

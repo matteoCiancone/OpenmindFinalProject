@@ -61,7 +61,7 @@ function removeFromWishlist() {
 
 wishAddBtn.addEventListener("click", addWishlist);
 wishRemoveBtn.addEventListener("click", removeFromWishlist);
-
+console.log(addWishlist())
 
 /***********Wishlist btn single product mobile************/
 
@@ -71,15 +71,15 @@ const wishRemoveBtnSm = document.querySelector(".removeWishlistBtnSpSm");
 
 window.onload = wishRemoveBtnSm.setAttribute("hidden", "hidden");
 
-function addWishlist() {
+function addWishlistSm() {
     wishAddBtnSm.setAttribute("hidden", "hidden");
     wishRemoveBtnSm.removeAttribute("hidden")
 }
 
-function removeFromWishlist() {
+function removeFromWishlistSm() {
     wishRemoveBtnSm.setAttribute("hidden", "hidden");
     wishAddBtnSm.removeAttribute("hidden");
 }
 
-wishAddBtnSm.addEventListener("click", addWishlist);
-wishRemoveBtnSm.addEventListener("click", removeFromWishlist);
+wishAddBtnSm.addEventListener("click", addWishlistSm);
+wishRemoveBtnSm.addEventListener("click", removeFromWishlistSm);

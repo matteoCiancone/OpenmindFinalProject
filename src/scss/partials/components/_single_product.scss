@@ -78,11 +78,17 @@ body {
     z-index: 100;
 }
 
-.favoriteSp {
+.favoriteBtnSpSm {
     position: absolute;
     z-index: 100;
     top: 4%;
     right: 4%;
+    border: none;
+    background: none;
+}
+
+.removeWishlistBtnSpSm {
+    @extend .favoriteBtnSpSm;
 }
 
 .swiperService {

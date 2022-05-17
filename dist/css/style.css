@@ -195,9 +195,12 @@ header {
   font-size: 1rem;
   text-decoration: line-through;
 }
-.price svg {
+.price button {
   position: absolute;
-  right: 4%;
+  right: 2%;
+  border: 0;
+  background: none;
+  cursor: pointer;
 }
 
 .card-text {
@@ -284,11 +287,13 @@ body {
   z-index: 100;
 }
 
-.favoriteSp {
+.favoriteBtnSpSm, .removeWishlistBtnSpSm {
   position: absolute;
   z-index: 100;
   top: 4%;
   right: 4%;
+  border: none;
+  background: none;
 }
 
 .swiperService {
@@ -608,8 +613,9 @@ body {
     width: 100%;
     padding: 10px;
     margin-top: 35px;
+    cursor: pointer;
   }
-  .grid .grid-item-text .favoriteBtnSp {
+  .grid .grid-item-text .favoriteBtnSp, .grid .grid-item-text .removeWishlistBtnSp {
     border: 0;
     color: white;
     background-color: black;
@@ -618,6 +624,7 @@ body {
     margin-top: 35px;
     width: 40px;
     border-left: 2px solid grey;
+    cursor: pointer;
   }
 }
 @media (min-width: 1024px) {

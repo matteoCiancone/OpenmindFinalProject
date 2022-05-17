@@ -26,4 +26,60 @@ function checkEmail(email) {
 
 formBtnSend.addEventListener("click", checkEmail);
 
+const addCartBtn = document.querySelectorAll(".addCartBtn");
 
+addCartBtn.forEach(btn => {
+    btn.addEventListener("click", addToCart);
+})
+
+/***********Add to cart product list & single product************/
+function addToCart() {
+    Swal.fire({
+        position: 'center',
+        title: 'Product added to cart!',
+        showConfirmButton: true,
+        buttonsStyling: false,
+    });
+}
+
+/***********Wishlist btn single product************/
+
+const wishAddBtn = document.querySelector(".favoriteBtnSp");
+const wishRemoveBtn = document.querySelector(".removeWishlistBtnSp");
+
+window.onload = wishRemoveBtn.setAttribute("hidden", "hidden");
+
+function addWishlist() {
+    wishAddBtn.setAttribute("hidden", "hidden");
+    wishRemoveBtn.removeAttribute("hidden")
+}
+
+function removeFromWishlist() {
+    wishRemoveBtn.setAttribute("hidden", "hidden");
+    wishAddBtn.removeAttribute("hidden");
+}
+
+wishAddBtn.addEventListener("click", addWishlist);
+wishRemoveBtn.addEventListener("click", removeFromWishlist);
+
+
+/***********Wishlist btn single product mobile************/
+
+
+const wishAddBtnSm = document.querySelector(".favoriteBtnSpSm");
+const wishRemoveBtnSm = document.querySelector(".removeWishlistBtnSpSm");
+
+window.onload = wishRemoveBtnSm.setAttribute("hidden", "hidden");
+
+function addWishlist() {
+    wishAddBtnSm.setAttribute("hidden", "hidden");
+    wishRemoveBtnSm.removeAttribute("hidden")
+}
+
+function removeFromWishlist() {
+    wishRemoveBtnSm.setAttribute("hidden", "hidden");
+    wishAddBtnSm.removeAttribute("hidden");
+}
+
+wishAddBtnSm.addEventListener("click", addWishlist);
+wishRemoveBtnSm.addEventListener("click", removeFromWishlist);

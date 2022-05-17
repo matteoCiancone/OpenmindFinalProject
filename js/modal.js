@@ -62,8 +62,9 @@ function removeFromWishlist() {
 wishAddBtn.addEventListener("click", addWishlist);
 wishRemoveBtn.addEventListener("click", removeFromWishlist);
 
-/***********Wishlist btn single product mobile************/
 
+
+/***********Wishlist btn single product mobile************/
 
 const wishAddBtnSm = document.querySelector(".favoriteBtnSpSm");
 const wishRemoveBtnSm = document.querySelector(".removeWishlistBtnSpSm");

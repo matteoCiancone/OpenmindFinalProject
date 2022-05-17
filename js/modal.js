@@ -61,7 +61,6 @@ function removeFromWishlist() {
 
 wishAddBtn.addEventListener("click", addWishlist);
 wishRemoveBtn.addEventListener("click", removeFromWishlist);
-console.log(addWishlist())
 
 /***********Wishlist btn single product mobile************/
 
